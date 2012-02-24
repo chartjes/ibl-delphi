@@ -1,11 +1,9 @@
 {
-    "name": "IBL Delphi",
-    "description": "App that allows peopel to vote on tests in the IBL",
-    "keywords": ["ibl"],
-    "type": "application",
-    "license": "private",
-    "repositories": {
-        "slim repo": {
+    "name": "api.ibl.org",
+    "version": "0.0.1",
+    "repositories": [
+        {
+            "type": "package",
             "package": {
                 "name": "codeguy/slim",
                 "version": "1.5.1",
@@ -20,18 +18,23 @@
                 }
             }
         }
-    },
+    ],
     "require": {
         "behat/behat": ">=2.2.2",
-        "codeguy/slim": ">=1.5.1",
-        "pimple/pimple": ">=1.0"
-    },
-    "autoload": {
-        "psr-0": { 
-            "Slim": "vendor/codeguy/slim/Slim"
-        }
+        "pimple/pimple": ">=1.0.0-dev",
+        "codeguy/slim": "1.5.1",
+        "guzzle/guzzle": ">=2.0.1"
     },
     "config": {
         "bin-dir": "bin/"
+    },
+    "autoload": {
+        "psr-0": { 
+            "IBL" : "lib/IBL",
+            "Slim": "vendor/codeguy/slim/Slim"
+        }
     }
 }
+    
+    
+
