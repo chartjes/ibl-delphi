@@ -1,0 +1,714 @@
+[
+    {
+        "name": "symfony/finder",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/Finder",
+        "time": "2012-01-05 05:51:20",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Finder",
+            "reference": "v2.0.9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Finder/zipball/v2.0.9",
+            "reference": "v2.0.9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "symfony/finder"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Finder Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Finder": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/yaml",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/Yaml",
+        "time": "2012-01-13 07:48:38",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Yaml",
+            "reference": "v2.0.10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Yaml/zipball/v2.0.10",
+            "reference": "v2.0.10",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "symfony/yaml"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Yaml Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Yaml": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/translation",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/Translation",
+        "time": "2012-01-05 05:51:20",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Translation",
+            "reference": "v2.0.9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Translation/zipball/v2.0.9",
+            "reference": "v2.0.9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "symfony/config": "v2.0.10",
+            "symfony/yaml": "v2.0.10"
+        },
+        "type": "library",
+        "names": [
+            "symfony/translation"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Translation Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Translation": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/EventDispatcher",
+        "time": "2012-01-05 05:51:20",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/EventDispatcher",
+            "reference": "v2.0.9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/EventDispatcher/zipball/v2.0.9",
+            "reference": "v2.0.9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "symfony/event-dispatcher"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\EventDispatcher": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/dependency-injection",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/DependencyInjection",
+        "time": "2012-02-02 09:59:53",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/DependencyInjection",
+            "reference": "v2.0.10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/DependencyInjection/zipball/v2.0.10",
+            "reference": "v2.0.10",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "suggest": {
+            "symfony/yaml": "v2.0.10"
+        },
+        "recommend": {
+            "symfony/config": "v2.0.10"
+        },
+        "type": "library",
+        "names": [
+            "symfony/dependency-injection"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony DependencyInjection Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\DependencyInjection": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/config",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/Config",
+        "time": "2012-01-22 01:13:52",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Config",
+            "reference": "v2.0.10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Config/zipball/v2.0.10",
+            "reference": "v2.0.10",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "symfony/config"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Config Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Config": ""
+            }
+        }
+    },
+    {
+        "name": "symfony/console",
+        "version": "v2.0.10",
+        "version_normalized": "2.0.10.0",
+        "target-dir": "Symfony/Component/Console",
+        "time": "2012-01-11 11:33:56",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Console",
+            "reference": "v2.0.10"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Console/zipball/v2.0.10",
+            "reference": "v2.0.10",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "symfony/console"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Console Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Console": ""
+            }
+        }
+    },
+    {
+        "name": "behat/gherkin",
+        "version": "v2.0.2",
+        "version_normalized": "2.0.2.0",
+        "time": "2012-02-04 09:08:29",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/Behat/Gherkin.git",
+            "reference": "v2.0.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/Behat/Gherkin/zipball/v2.0.2",
+            "reference": "v2.0.2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "symfony/finder": ">=2.0,<2.2-dev"
+        },
+        "recommend": {
+            "symfony/yaml": ">=2.0,<2.2-dev",
+            "symfony/translation": ">=2.0,<2.2-dev",
+            "symfony/config": ">=2.0,<2.2-dev"
+        },
+        "type": "library",
+        "names": [
+            "behat/gherkin"
+        ],
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            }
+        ],
+        "description": "Gherkin DSL parser for PHP 5.3",
+        "homepage": "http://behat.org/",
+        "keywords": [
+            "Symfony2",
+            "BDD",
+            "parser",
+            "DSL",
+            "Behat"
+        ],
+        "autoload": {
+            "psr-0": {
+                "Behat\\Gherkin": "src/"
+            }
+        }
+    },
+    {
+        "name": "behat/behat",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "time": "2012-01-29 11:04:19",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/Behat/Behat.git",
+            "reference": "v2.3.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/Behat/Behat/zipball/v2.3.2",
+            "reference": "v2.3.2",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.1",
+            "behat/gherkin": ">=2.0.1,<2.1.0-dev",
+            "symfony/console": ">=2.0.0,<2.2.0-dev",
+            "symfony/config": ">=2.0.0,<2.2.0-dev",
+            "symfony/dependency-injection": ">=2.0.0,<2.2.0-dev",
+            "symfony/event-dispatcher": ">=2.0.0,<2.2.0-dev",
+            "symfony/translation": ">=2.0.0,<2.2.0-dev",
+            "symfony/yaml": ">=2.0.0,<2.2.0-dev",
+            "symfony/finder": ">=2.0.0,<2.2.0-dev"
+        },
+        "bin": [
+            "bin/behat"
+        ],
+        "type": "library",
+        "names": [
+            "behat/behat"
+        ],
+        "installation-source": "source",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Konstantin Kudryashov",
+                "email": "ever.zet@gmail.com",
+                "homepage": "http://everzet.com"
+            }
+        ],
+        "description": "Scenario-oriented BDD framework for PHP 5.3",
+        "homepage": "http://behat.org/",
+        "keywords": [
+            "Symfony2",
+            "BDD",
+            "Behat"
+        ],
+        "autoload": {
+            "psr-0": {
+                "Behat\\Behat": "src/"
+            }
+        }
+    },
+    {
+        "name": "codeguy/slim",
+        "version": "1.5.1",
+        "version_normalized": "1.5.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim.git",
+            "reference": "d180af13f0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/codeguy/Slim/zipball/1.5.1.5",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "names": [
+            "codeguy/slim"
+        ],
+        "installation-source": "dist"
+    },
+    {
+        "name": "pimple/pimple",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "time": "2012-01-26 01:23:17",
+        "source": {
+            "type": "git",
+            "url": "git://github.com/fabpot/Pimple.git",
+            "reference": "321db91e49b6cf8cbeed58d8db662d40de96d2c3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/fabpot/Pimple/zipball/321db91e49b6cf8cbeed58d8db662d40de96d2c3",
+            "reference": "321db91e49b6cf8cbeed58d8db662d40de96d2c3",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "type": "library",
+        "names": [
+            "pimple/pimple"
+        ],
+        "installation-source": "source",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            }
+        ],
+        "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+        "homepage": "http://pimple.sensiolabs.org",
+        "keywords": [
+            "dependency injection",
+            "container"
+        ],
+        "autoload": {
+            "psr-0": {
+                "Pimple": "lib/"
+            }
+        }
+    },
+    {
+        "name": "doctrine/common",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "time": "2012-01-26 15:34:22",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/doctrine/common",
+            "reference": "fc26d10d97dc773923a8d561e9301c3c73b9cc70"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/doctrine/common/zipball/fc26d10d97dc773923a8d561e9301c3c73b9cc70",
+            "reference": "fc26d10d97dc773923a8d561e9301c3c73b9cc70",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "type": "library",
+        "names": [
+            "doctrine/common"
+        ],
+        "installation-source": "source",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Jonathan Wage",
+                "email": "jonwage@gmail.com",
+                "homepage": null
+            },
+            {
+                "name": "Guilherme Blanco",
+                "email": "guilhermeblanco@gmail.com",
+                "homepage": null
+            },
+            {
+                "name": "Roman Borschel",
+                "email": "roman@code-factory.org",
+                "homepage": null
+            },
+            {
+                "name": "Benjamin Eberlei",
+                "email": "kontakt@beberlei.de",
+                "homepage": null
+            },
+            {
+                "name": "Johannes Schmitt",
+                "email": "schmittjoh@gmail.com",
+                "homepage": "https://github.com/schmittjoh"
+            }
+        ],
+        "description": "Common Library for Doctrine projects",
+        "homepage": "http://www.doctrine-project.org",
+        "keywords": [
+            "collections",
+            "spl",
+            "eventmanager",
+            "annotations",
+            "persistence"
+        ],
+        "autoload": {
+            "psr-0": {
+                "Doctrine\\Common": "lib/"
+            }
+        }
+    },
+    {
+        "name": "symfony/validator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "target-dir": "Symfony/Component/Validator",
+        "time": "2012-02-09 12:39:47",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/Validator",
+            "reference": "9ee45c480113b8a7406364d991fbc5ab245cbad6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/symfony/Validator/zipball/9ee45c480113b8a7406364d991fbc5ab245cbad6",
+            "reference": "9ee45c480113b8a7406364d991fbc5ab245cbad6",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2",
+            "doctrine/common": ">=2.1"
+        },
+        "suggest": {
+            "symfony/http-foundation": "dev-master",
+            "symfony/yaml": "dev-master"
+        },
+        "type": "library",
+        "names": [
+            "symfony/validator"
+        ],
+        "installation-source": "source",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": null
+            },
+            {
+                "name": "Symfony Community",
+                "email": null,
+                "homepage": "http://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Validator Component",
+        "homepage": "http://symfony.com",
+        "autoload": {
+            "psr-0": {
+                "Symfony\\Component\\Validator": ""
+            }
+        }
+    },
+    {
+        "name": "guzzle/guzzle",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "time": "2012-02-23 03:47:02",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle",
+            "reference": "4227abdf0b0c56bdeaca9bd0b5fd04a339d9b947"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/guzzle/guzzle/zipball/4227abdf0b0c56bdeaca9bd0b5fd04a339d9b947",
+            "reference": "4227abdf0b0c56bdeaca9bd0b5fd04a339d9b947",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2",
+            "ext-curl": "*",
+            "symfony/event-dispatcher": "*",
+            "symfony/validator": "*"
+        },
+        "suggest": {
+            "symfony/class-loader": "*",
+            "doctrine/common": "*",
+            "monolog/monolog": "*",
+            "zend/zend-cache": "*",
+            "zend/zend-log": "*"
+        },
+        "type": "library",
+        "names": [
+            "guzzle/guzzle"
+        ],
+        "installation-source": "source",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Guzzle Community",
+                "email": null,
+                "homepage": "https://github.com/guzzle/guzzle/contributors"
+            }
+        ],
+        "description": "Guzzle is a PHP HTTP client library and framework for building RESTful web service clients",
+        "homepage": "http://www.guzzlephp.org/",
+        "keywords": [
+            "framework",
+            "http",
+            "rest",
+            "web service"
+        ],
+        "autoload": {
+            "psr-0": {
+                "Guzzle\\Tests": "tests/",
+                "Guzzle": "src/"
+            }
+        }
+    }
+]
