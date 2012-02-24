@@ -7,3 +7,4 @@ Scenario:
 	And the response contains more than one transaction
 	And the first transaction contains a transaction ID
 	And the first transaction contains two teams
+	And the first transaction contains a description

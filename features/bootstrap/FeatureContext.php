@@ -99,4 +99,17 @@ class FeatureContext extends BehatContext
             throw new Exception("First transaction did not contain two teams");
         }
     }
+
+     /**
+     * @Given /^the first transaction contains a description$/
+     */
+    public function theFirstTransactionContainsADescription()
+    {
+        $data = json_decode($this->response, true);
+        $transaction = $data[0];
+
+        if (!isset($transaction['description'])) {
+            throw new Exception("First transaction is missing a description");
+        }
+    }
 }
