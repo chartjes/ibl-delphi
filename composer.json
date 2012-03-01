@@ -29,11 +29,11 @@
         "bin-dir": "bin/"
     },
     "autoload": {
-        "psr-0": { 
-            "IBL" : "lib/IBL",
-            "Slim": "vendor/codeguy/slim/Slim"
-        }
-    }
+            "psr-0": {
+                "Slim": "vendor/codeguy/slim/Slim",
+                "IBL": "lib"
+            }
+    } 
 }
     
     
