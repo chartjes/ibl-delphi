@@ -15,7 +15,7 @@ return array(
     'Symfony\\Component\\Config' => $vendorDir . '/symfony/config/',
     'Slim' => $vendorDir . '/codeguy/slim/Slim',
     'Pimple' => $vendorDir . '/pimple/pimple/lib/',
-    'IBL' => dirname($vendorDir) . '/lib/IBL',
+    'IBL' => dirname($vendorDir) . '/lib',
     'Guzzle\\Tests' => $vendorDir . '/guzzle/guzzle/tests/',
     'Guzzle' => $vendorDir . '/guzzle/guzzle/src/',
     'Doctrine\\Common' => $vendorDir . '/doctrine/common/lib/',
