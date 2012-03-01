@@ -63,17 +63,17 @@ class FeatureContext extends BehatContext
     }
 
     /**
-     * @Given /^the response contains more than one transaction$/
+     * @Given /^the response contains at least one transaction$/
      */
-    public function theResponseContainsMoreThanOneTransaction()
+    public function theResponseContainsAtLeastOneTransaction()
     {
         $data = json_decode($this->response);
 
         if (count($data) < 1) {
-            throw new Exception("Response did not contain more than one transaction");
+            throw new Exception("Response did not contain at least one transaction");
         }
-    }
-
+    }    /**
+   
     /**
      * @Given /^the first transaction contains a transaction ID$/
      */
