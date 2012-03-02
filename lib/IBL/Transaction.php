@@ -25,10 +25,17 @@ class Transaction
         $minDate = date('Y-m-d', strtotime("{$maxDate} - 3 weeks"));
 
         // The transactions we need to build are in pairs
-        $idx = 0;
         $rows = $this->_getRawData($minDate, $maxDate);
+        $currentTransactions = $this->_generateFormattedResults($rows);
+        
+        return json_encode($currentTransactions);
+    }
+
+    protected function _generateFormattedResults($rows)
+    {
+        $idx = 0;
         $transactionCount = count($rows);
-        $currentTransactions = array();
+        $results = array();
 
         while ($idx < $transactionCount) {
             $transactionId = $rows[$idx]['trans_id'];
@@ -36,7 +43,7 @@ class Transaction
             $team2 = $rows[$idx + 1]['ibl_team'];
             $description = $team1 . ' ' . $rows[$idx]['log_entry'];
             $transactionDate = $rows[$idx]['transaction_date'];
-            $currentTransactions[] = array(
+            $results[] = array(
                 'id' => $transactionId,
                 'tradePartner1' => $team1,
                 'tradePartner2' => $team2,
@@ -45,8 +52,8 @@ class Transaction
             );
             $idx = $idx + 2;
         }
-        
-        return json_encode($currentTransactions);
+
+        return $results;
     }
 
     protected function _getRawData($minDate, $maxDate)
