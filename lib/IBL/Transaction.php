@@ -13,15 +13,18 @@ class Transaction
 
     public function getArchived()
     {
+        $maxDate = $this->_getMaxDate();
+        $archiveMaxDate = date('Y-m-d', strtotime("{$maxDate} - 6 months"));
+        $archiveMinDate = date('Y-m-d', strtotime("{$archiveMaxDate} - 3 weeks"));
+        $rows = $this->_getRawData($archiveMinDate, $archiveMaxDate);
+        $archivedTransactions = $this->_generateFormattedResults($rows);
+
+        return json_encode($archivedTransactions);
     }
 
     public function getCurrent()
     {
-        $sql = "SELECT MAX(transaction_date) FROM transaction_log";
-        $sth = $this->_conn->prepare($sql);
-        $sth->execute();
-        $row = $sth->fetch();
-        $maxDate = $row['max'];
+        $maxDate = $this->_getMaxDate();
         $minDate = date('Y-m-d', strtotime("{$maxDate} - 3 weeks"));
 
         // The transactions we need to build are in pairs
@@ -35,6 +38,11 @@ class Transaction
     {
         $idx = 0;
         $transactionCount = count($rows);
+        
+        if ($transactionCount == 0) {
+            return array();
+        }
+
         $results = array();
 
         while ($idx < $transactionCount) {
@@ -54,6 +62,16 @@ class Transaction
         }
 
         return $results;
+    }
+
+    protected function _getMaxDate()
+    {
+        $sql = "SELECT MAX(transaction_date) FROM transaction_log";
+        $sth = $this->_conn->prepare($sql);
+        $sth->execute();
+        $row = $sth->fetch();
+
+        return $row['max'];
     }
 
     protected function _getRawData($minDate, $maxDate)
