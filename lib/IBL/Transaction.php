@@ -11,6 +11,10 @@ class Transaction
         $this->_conn = $conn;
     }
 
+    public function getArchived()
+    {
+    }
+
     public function getCurrent()
     {
         $sql = "SELECT MAX(transaction_date) FROM transaction_log";
@@ -19,22 +23,12 @@ class Transaction
         $row = $sth->fetch();
         $maxDate = $row['max'];
         $minDate = date('Y-m-d', strtotime("{$maxDate} - 3 weeks"));
-        $sql = "
-            SELECT *
-            FROM transaction_log
-            WHERE log_entry LIKE 'Trades%'
-            AND transaction_date >= '{$minDate}'
-            AND transaction_date <= '{$maxDate}'
-            ORDER BY trans_id, transaction_date
-            ";
-        $sth = $this->_conn->prepare($sql);
-        $sth->execute();
-        $rows = $sth->fetchAll();
-        $transactionCount = count($rows);
-        $currentTransactions = array();
 
         // The transactions we need to build are in pairs
         $idx = 0;
+        $rows = $this->_getRawData($minDate, $maxDate);
+        $transactionCount = count($rows);
+        $currentTransactions = array();
 
         while ($idx < $transactionCount) {
             $transactionId = $rows[$idx]['trans_id'];
@@ -53,5 +47,21 @@ class Transaction
         }
         
         return json_encode($currentTransactions);
+    }
+
+    protected function _getRawData($minDate, $maxDate)
+    {
+        $sql = "
+            SELECT *
+            FROM transaction_log
+            WHERE log_entry LIKE 'Trades%'
+            AND transaction_date >= '{$minDate}'
+            AND transaction_date <= '{$maxDate}'
+            ORDER BY trans_id, transaction_date
+            ";
+        $sth = $this->_conn->prepare($sql);
+        $sth->execute();
+        
+        return $sth->fetchAll();
     }
 }
